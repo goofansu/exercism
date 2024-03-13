@@ -1,5 +1,5 @@
 {
-  description = "A basic flake with a shell";
+  description = "A simple environment for Exercism exercises";
   inputs.nixpkgs.url = "github:nixOS/nixpkgs/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
 

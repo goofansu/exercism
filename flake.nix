@@ -8,6 +8,6 @@
       let pkgs = nixpkgs.legacyPackages.${system};
       in {
         devShells.default = with pkgs;
-          mkShell { packages = [ exercism fswatch elixir ruby ]; };
+          mkShell { packages = [ exercism elixir ruby ]; };
       });
 }

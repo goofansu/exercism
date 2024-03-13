@@ -7,6 +7,7 @@
     flake-utils.lib.eachDefaultSystem (system:
       let pkgs = nixpkgs.legacyPackages.${system};
       in {
-        devShells.default = with pkgs; mkShell { packages = [ exercism fswatch ]; };
+        devShells.default = with pkgs;
+          mkShell { packages = [ exercism fswatch elixir ruby ]; };
       });
 }
